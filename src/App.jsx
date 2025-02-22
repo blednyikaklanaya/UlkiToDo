@@ -1,6 +1,6 @@
 import "./App.css";
 
-import MainPage from "./components/mainPage/mainPage";
+import MainPage from "./components/mainPage/MainPage";
 
 function App() {
 
