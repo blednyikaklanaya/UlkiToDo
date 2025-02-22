@@ -1,0 +1,11 @@
+.column-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 400px;
+    min-height: 450px;
+
+    background-color: rgb(233, 237, 239);
+    border-radius: 20px;
+}

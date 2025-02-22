@@ -1,0 +1,15 @@
+.todo-card {
+    border-radius: 20px;
+    border: solid 1px;
+    border-color: rgb(255, 255, 255);
+
+    min-width: 200px;
+    max-width: 365px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    padding-left: 15px;
+}

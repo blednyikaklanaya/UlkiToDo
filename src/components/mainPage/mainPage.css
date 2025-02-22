@@ -1,0 +1,9 @@
+.container-columns {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 100px;
+    margin-left: 50px;
+
+    gap: 200px;
+}
