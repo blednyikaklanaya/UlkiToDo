@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import "./column.css";
 
-import CardTodo from "../cardTodo/cardTodo";
+import CardTodo from "../cardTodo/СardTodo";
 
 function Column({ nameColumn }) {
     const [cardTodos, setCardTotdo] = useState([]);

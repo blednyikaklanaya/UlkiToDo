@@ -1,6 +1,6 @@
 import "./mainPage.css";
 
-import Column from "../column/column";
+import Column from "../column/Сolumn";
 
 function MainPage() {
 
