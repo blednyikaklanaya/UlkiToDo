@@ -12,7 +12,7 @@ function Column({ nameColumn }) {
     const [inputTodoValue, setInputTodoValue] = useState("");
 
     useEffect(() => {
-        axios.get("http://ulkiorapi.atwebpages.com/todo-app/getTodos.php")
+        axios.get("https://ulkiorapi.atwebpages.com/todo-app/getTodos.php")
             .then(responce => {
                 setCardTotdo(responce.data);
             })
