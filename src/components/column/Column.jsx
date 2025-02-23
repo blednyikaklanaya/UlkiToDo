@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 import "./column.css";
 
@@ -9,6 +10,17 @@ function Column({ nameColumn }) {
     const [cardTodos, setCardTotdo] = useState([]);
 
     const [inputTodoValue, setInputTodoValue] = useState("");
+
+    useEffect(() => {
+        axios.get("http://ulkiorapi.atwebpages.com/todo-app/getTodos.php")
+            .then(responce => {
+                setCardTotdo(responce.data);
+            })
+            .catch(error => {
+                console.error("Error at time of loading data: ", error);
+            })
+    }, [])
+
     
     const addTodo = (e) => {
         e.preventDefault();
@@ -19,7 +31,7 @@ function Column({ nameColumn }) {
     }
 
     const deleteTodo = (id) => {
-        setCardTotdo(cardTodos.filter(todo => todo.id != id));  
+        setCardTotdo(cardTodos.filter(todo => todo.id != id));
     }
 
     return (
